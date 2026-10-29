@@ -47,28 +47,6 @@ Os arquivos em `output` são resultados locais da execução e não devem ser en
 - `scraping_indicadores.py`: leitura e filtragem dos indicadores
 - `scraping_checkpoint.py`: retomada da coleta
 
-## Preparar para publicar no GitHub
-
-O arquivo `.gitignore` do projeto exclui resultados gerados e arquivos temporários. Antes de criar o commit, confira o que será enviado:
-
-```powershell
-git init
-git status
-git add .
-git status
-git commit -m "Initial project setup"
-```
-
-Depois, crie um repositório vazio no GitHub e configure-o como remoto:
-
-```powershell
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-git push -u origin main
-```
-
-Substitua a URL pelo endereço do seu repositório. Revise `git status` antes do commit e não publique credenciais, dados coletados ou arquivos privados.
-
 ## Observação
 
 O scraper depende da estrutura e disponibilidade do painel. Use-o de forma responsável e respeite as condições de uso e as orientações do site de origem.
